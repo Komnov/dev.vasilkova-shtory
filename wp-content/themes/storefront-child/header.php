@@ -30,51 +30,43 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'storefront_before_header' ); ?>
 
-	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
-
-		<?php
-		/**
-		 * Functions hooked into storefront_header action
-		 *
-		 * @hooked storefront_header_container                 - 0
-		 * @hooked storefront_skip_links                       - 5
-		 * @hooked storefront_social_icons                     - 10
-		 * @hooked storefront_site_branding                    - 20
-		 * @hooked storefront_secondary_navigation             - 30
-		 * @hooked storefront_product_search                   - 40
-		 * @hooked storefront_header_container_close           - 41
-		 * @hooked storefront_primary_navigation_wrapper       - 42
-		 * @hooked storefront_primary_navigation               - 50
-		 * @hooked storefront_header_cart                      - 60
-		 * @hooked storefront_primary_navigation_wrapper_close - 68
-		 */
-		do_action( 'storefront_header' );
-		?>
-
-	</header><!-- #masthead -->
-
-	<header class="header">
+	<header class="header" id="masthead" role="banner" style="<?php storefront_header_styles(); ?>">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-3 header__logo">
+				<div class="col-lg-3 header__logo">
 					<div>
-						<a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.png" alt="logo">
-</a>
+						<a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.png" alt="logo"></a>
+						<div class="header__logo_title">
+							Дизайн-студия штор Превосходные решения для Вашего дома!
+						</div>
 					</div>
 				</div>
-				<div class="col-xl-3 header__phone">
+				<div class="col-lg-2 header__phone">
 					<div>
-						<a href="tel:">+7 909-910-42-92</a>
-						<a href="tel:">+7 929-611-71-65</a>
+						<div class="header__phone_number">
+							<a href="tel:">+7 909-910-42-92</a>
+							<a href="" class="header__whatsapp"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/whatsapp.svg" alt=""></a>
+						</div>
+						<div class="header__phone_number">
+							<a href="tel:">+7 929-611-71-65 </a>
+							<a href="" class="header__whatsapp"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/whatsapp.svg" alt=""></a>
+						</div>
 					</div>
 				</div>
-				<div class="col-xl-3 header__adress">
+				<div class="col-lg-4 header__adress">
 					<div>
-						<div>Москва, Нахимовский проспект д. 24, стр. 1</div>
+						<div class="header__adress_name">Москва, Нахимовский проспект д. 24, стр. 1</div>
 						<a href="mailto:7725445@mail.ru">7725445@mail.ru</a>
 					</div>
 				</div>
-				<div class="col-xl-3 header__social"></div>
+				<div class="col-lg-3 header__social">
+					<div class="header__social_links">
+						<a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/viber.svg" alt=""></a>
+						<a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg" alt=""></a>
+						<a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/telegram.svg" alt=""></a>
+					</div>
+					<div class="header__social_btn callback__btn"><button>Заказать расчет</button></div>
+				</div>
 			</div>
 			<div class="row header__nav">
 				<?php
@@ -85,6 +77,7 @@
 						) );
 					}
 				?>
+
 			</div>	
 		</div>
 	</header>
