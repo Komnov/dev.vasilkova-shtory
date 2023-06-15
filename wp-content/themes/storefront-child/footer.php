@@ -59,7 +59,7 @@
 						<a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg" alt=""></a>
 						<a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/telegram.svg" alt=""></a>
 					</div>
-					<div class="footer__social_btn callback__btn"><button>Заказать расчет</button></div>
+					<div class="footer__social_btn callback__btn_small"><button class="sg-popup-id-286">Заказать расчет</button></div>
 					<div class="footer__adress_name">Москва, Нахимовский проспект д. 24, стр. 1</div>
 				</div>
 			</div>
@@ -73,6 +73,5 @@
 <?php wp_footer(); ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
 </body>
 </html>

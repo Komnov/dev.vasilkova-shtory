@@ -35,7 +35,7 @@
 			<div class="row">
 				<div class="col-lg-3 header__logo">
 					<div>
-						<a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.png" alt="logo"></a>
+						<a href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.png" alt="logo"></a>
 						<div class="header__logo_title">
 							Дизайн-студия штор Превосходные решения для Вашего дома!
 						</div>
@@ -65,7 +65,7 @@
 						<a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg" alt=""></a>
 						<a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/telegram.svg" alt=""></a>
 					</div>
-					<div class="header__social_btn callback__btn"><button>Заказать расчет</button></div>
+					<div class="header__social_btn callback__btn_small"><button class="sg-popup-id-286">Заказать расчет</button></div>
 				</div>
 			</div>
 			<div class="row header__nav">
@@ -79,6 +79,49 @@
 				?>
 
 			</div>	
+		</div>
+	</header>
+
+	<header class="mobiler__header">
+	<div class="bg__overlay"></div>
+		<div class="container">
+			<div class="row mobiler__header_top">
+				<div class="col-8 mobiler__header_callback">
+				<div class="callback__btn_small"><button class="sg-popup-id-286">Заказать расчет</button></div>
+				</div>
+				<div class="col-4 mobiler__header_burger">
+					<div class="burger" id="burger"><span></span></div>
+				</div>
+				<div class="col-12 mobiler__menu">
+					<div class="mobiler__menu_logo">
+						<div class="img">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.png" alt="logo">
+						<div class="header__logo_title">
+							Дизайн-студия штор Превосходные решения для Вашего дома!
+						</div></div>
+						<div class="phone__container">
+							<div class="phone_number">
+								<a href="tel:">+7 909-910-42-92</a>
+								<a href="" class="whatsapp"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/whatsapp.svg" alt=""></a>
+							</div>
+							<div class="phone_number">
+								<a href="tel:">+7 929-611-71-65 </a>
+								<a href="" class="whatsapp"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/whatsapp.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="mobiler__menu_nav">
+					<?php
+					if ( has_nav_menu( 'header-menu' ) ) {
+						wp_nav_menu( array(
+						'theme_location' => 'header-menu',
+						'menu_class'     => 'header-menu-class',
+						) );
+					}
+				?>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 
