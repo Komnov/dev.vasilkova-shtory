@@ -86,10 +86,18 @@
 	<div class="bg__overlay"></div>
 		<div class="container">
 			<div class="row mobiler__header_top">
-				<div class="col-8 mobiler__header_callback">
+				<div class="col-5 mobiler__header_callback">
 				<div class="callback__btn_small"><button class="sg-popup-id-286">Заказать расчет</button></div>
 				</div>
-				<div class="col-4 mobiler__header_burger">
+				<div class="col-5 header__social">
+					<div class="header__social_list">
+						<a href="//api.whatsapp.com/send?phone=79296117165" target="_blank" rel="noopener noreferrer"><img decoding="async" src="/wp-content/themes/storefront-child/assets/img/icons/whatsapp.svg" alt=""></a><br>
+						<a href="//resolve?domain=Natalishtori" target="_blank" rel="noopener noreferrer"><img decoding="async" src="/wp-content/themes/storefront-child/assets/img/icons/telegram.svg" alt=""></a><br>
+						<a href="//add?number=120345678910" target="_blank" rel="noopener noreferrer"><img decoding="async" src="/wp-content/themes/storefront-child/assets/img/icons/viber.svg" alt=""></a><br>
+						<a href="//instagram.com/vasilkova.shtor/" target="_blank" rel="noopener noreferrer"><img decoding="async" src="/wp-content/themes/storefront-child/assets/img/icons/instagram.svg" alt=""></a>
+					</div>
+				</div>
+				<div class="col-2 mobiler__header_burger">
 					<div class="burger" id="burger"><span></span></div>
 				</div>
 				<div class="col-12 mobiler__menu">
